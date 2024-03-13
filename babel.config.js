@@ -3,8 +3,9 @@ module.exports = {
     [
       "@babel/preset-env", // 预设插件的集合, 用于将 ES6+ 代码转换为 ES5
       {
+        "debug": true, // 开启调试模式
         "useBuiltIns": "usage", // 按需引入 polyfill(兼容性代码/垫片)
-        "corejs": 3, // 指定 core-js 版本
+        "corejs":3.36, // 指定 core-js 版本
         "targets": { // 指定兼容的浏览器版本
           "chrome": "58",
           "ie": "11",
