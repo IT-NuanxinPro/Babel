@@ -1,10 +1,10 @@
-# 🚀 Babel Learning Project
+# 🚀 Babel 学习项目
 
 <div align="center">
 
-![Babel Logo](https://babeljs.io/img/babel.png)
+![Babel Logo](https://raw.githubusercontent.com/babel/logo/master/babel.png)
 
-**A comprehensive Babel learning project demonstrating ES6+ to ES5 transpilation with modern JavaScript features**
+**一个全面的 Babel 学习项目，演示如何将 ES6+ 代码转换为 ES5，包含现代 JavaScript 特性**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D14.0.0-brightgreen.svg)](https://nodejs.org/)
@@ -214,7 +214,7 @@ console.log(obj === null || obj === void 0 ? void 0 : obj.a,
 
 ## 👨‍💻 作者
 
-**liuhan** - [IT-NuanxinPro](https://github.com/IT-NuanxinPro)
+**NuanXin** - [IT-NuanxinPro](https://github.com/IT-NuanxinPro)
 
 ## 🙏 致谢
 
