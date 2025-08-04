@@ -1,19 +1,54 @@
 {
-  "name": "babel",
+  "name": "babel-learning-project",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/compiled.js",
   "license": "MIT",
   "type": "commonjs",
-  "description": "Babel setup for ES6",
+  "description": "🚀 A comprehensive Babel learning project demonstrating ES6+ to ES5 transpilation with modern JavaScript features",
+  "keywords": [
+    "babel",
+    "javascript",
+    "es6",
+    "es2015",
+    "transpiler",
+    "polyfill",
+    "learning",
+    "tutorial",
+    "modern-javascript",
+    "build-tools"
+  ],
+  "author": {
+    "name": "liuhan",
+    "email": "105851435+IT-NuanxinPro@users.noreply.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IT-NuanxinPro/Babel.git"
+  },
+  "homepage": "https://github.com/IT-NuanxinPro/Babel#readme",
+  "bugs": {
+    "url": "https://github.com/IT-NuanxinPro/Babel/issues"
+  },
   "scripts": {
-    "build": "babel src/index.js --out-file lib/compiled.js -w"
+    "build": "babel src --out-dir lib",
+    "build:watch": "babel src --out-dir lib --watch",
+    "build:single": "babel src/index.js --out-file lib/compiled.js",
+    "build:single:watch": "babel src/index.js --out-file lib/compiled.js --watch",
+    "clean": "rm -rf lib",
+    "dev": "npm run clean && npm run build:watch",
+    "test": "node lib/compiled.js",
+    "start": "npm run build && npm run test"
   },
   "dependencies": {
-    "@babel/cli": "^7.23.9",
-    "@babel/core": "^7.24.0",
-    "@babel/plugin-transform-runtime": "^7.24.0",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.24.0",
-    "core-js": "^3.36.0"
+    "@babel/cli": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-transform-runtime": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/runtime": "^7.28.2",
+    "core-js": "^3.44.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   }
 }

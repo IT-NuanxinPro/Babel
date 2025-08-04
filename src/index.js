@@ -14,7 +14,6 @@ async function asyncFunc() {
   });
 }
 
-
 //
 // const arr2 = [1, 2, 3];
 //
@@ -26,8 +25,8 @@ async function asyncFunc() {
 // console.log(sortedValues); // [1, 2, 10, 21]
 // console.log(values); // [1, 10, 21, 2]
 
-async function getData(){
-  const data  =  await asyncFunc()
-  console.log(data)
-}
+// async function getData(){
+//   const data  =  await asyncFunc()
+//   console.log(data)
+// }
 
